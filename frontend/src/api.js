@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE = "http://localhost:3000";
+const BASE = process.env.BASE_API|| "http://localhost:3000";
 
 export const api = {
   getTreasuries() {
